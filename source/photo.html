@@ -4,33 +4,32 @@
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
   </head>
-  <body class="page__body">
-    <header class="page-header">
-      <a href="#" class="page-header__logo">
+  <body>
+    <header class="header page-header">
+      <a href="#" class="header-logo page-header__logo">
         <img src="https://via.placeholder.com/150x150" width="102" height="85" alt="Логотип сайта городка Седона">
       </a>
-      <nav class="main-nav">
+      <nav class="main-nav header_nav">
         <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
-        <button class="main-nav__toggle" type="button"><span class="visually-hidden">Закрыть меню</span></button>
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
             <li class="site-list__item">
-              <a href="#">
+              <a class="site-list__link" href="index.html">
                 главная
               </a>
             </li>
             <li class="site-list__item">
-              <a href="photo.html">
+              <a class="site-list__link" href="#">
                 фото и видео
               </a>
             </li>
             <li class="site-list__item">
-              <a href="form.html">
+              <a class="site-list__link" href="form.html">
                 форма отзыва
               </a>
             </li>
             <li class="site-list__item">
-              <a href="https://htmlacademy.ru/">
+              <a class="site-list__link" href="https://htmlacademy.ru/">
                 html academy
               </a>
             </li>
@@ -42,41 +41,82 @@
       </div>
     </header>
     <main class="page-main">
+      <h1 class="visually-hidden">Седона небольшой городок в Аризоне</h1>
+      <section class="intro">
+        <div class="intro__header">
+          <img class="intro__text" src="https://via.placeholder.com/150x150" width="280" height="213" alt="Добро пожаловоть в Седону">
+        </div>
+        <div class="intro__wrapper">
+          <h2 class="intro__title">Фото и видео</h2>
+          <p class="intro__desc">Не можете решиться на путешествие из-за курса?Фотографии помогут вам забыть о политике и экономике.</p>
+        </div>
+      </section>
       <section class="media">
-        <h2>Фото и видео</h2>
+        <h2 class="visual-hidden">Фотографии Седоны</h2>
         <ul class="media__photo-list">
           <li class="media_photo-item">
-            <img src="https://via.placeholder.com/150x150" alt="Неродные просторы">
+            <a class="media_photo-link" href="#">
+              <img class="media_photo-img" src="https://via.placeholder.com/150x150" width="280" height="280" alt="Неродные просторы">
+            </a>
             <h3 class="media_photo-item-title">Неродные просторы</h3>
             <span class="media_photo-item-author">Автор фото: Борис</span>
             <span class="media_photo-item-raiting">1350</span>
           </li>
           <li class="media_photo-item">
-            <img src="https://via.placeholder.com/150x150" alt="Неродные просторы">
+            <a class="media_photo-link" href="#">
+              <img class="media_photo-img" src="https://via.placeholder.com/150x150" width="280" height="280" alt="Местная растительность">
+            </a>
             <h3 class="media_photo-item-title">Местная растительность</h3>
             <span class="media_photo-item-author">Автор фото: Сергей</span>
             <span class="media_photo-item-raiting">143</span>
           </li>
           <li class="media_photo-item">
-            <img src="https://via.placeholder.com/150x150" alt="Неродные просторы">
+            <a class="media_photo-link" href="#">
+              <img class="media_photo-img" src="https://via.placeholder.com/150x150" width="280" height="280" alt="Дорога на север">
+            </a>
             <h3 class="media_photo-item-title">Дорога на север</h3>
             <span class="media_photo-item-author">Автор фото: Петр</span>
             <span class="media_photo-item-raiting">96</span>
           </li>
           <li class="media_photo-item">
-            <img src="https://via.placeholder.com/150x150" alt="Неродные просторы">
+            <a class="media_photo-link" href="#">
+              <img class="media_photo-img" src="https://via.placeholder.com/150x150" width="280" height="280" alt="Мост дьявола">
+            </a>
             <h3 class="media_photo-item-title">Мост дьявола</h3>
             <span class="media_photo-item-author">Автор фото: Антон</span>
             <span class="media_photo-item-raiting">254</span>
           </li>
         </ul>
       </section>
+      <section class="video">
+        <h2 class="visual-hidden">Видеоролик о Седоне</h2>
+        <div class="video__wrapper">
+          <div class="video__header">
+            <span class="video__title">Всё еще сомневаетесь?</span>
+            <p class="video__desc">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
+          </div>
+        </div>
+        <div class="video__player">
+          <div class="video__control">
+            <div class="video__reply">
+            </div>
+            <div class="video__time">
+              <div class="video__timeline"></div>
+            </div>
+            <div class="video__subtitles">
+            </div>
+            <div class="video__full">
+            </div>
+          </div>
+          <img class="video__player-img" src="https://via.placeholder.com/150x150"  alt="Видеоролик о Седоне">
+        </div>
+      </section>
     </main>
     <footer class="page-footer">
       <p class="page-footer__tag">
         #visitSEDONA
       </p>
-      <ul class="social__list">
+      <ul class="social social__list">
         <li class="social__item">
           <a class="social__link social__link--twitter" href="https://twitter.com/htmlacademy_ru">Мы в Твитере</a>
         </li>
