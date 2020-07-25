@@ -1,0 +1,35 @@
+.advantages__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  color: $basic-white;
+}
+
+.advantages__title {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 26px;
+}
+
+.advantages__description {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.advantages__item {
+  text-align: center;
+}
+
+.advantages__item:nth-child(1) {
+  background-color: $bg-basic;
+}
+
+.advantages__item:nth-child(2) {
+  background-color: $bg-basic;
+}
+
+.advantages__item--background {
+  background-color: #EEEEEE;
+  color: #000000;
+}

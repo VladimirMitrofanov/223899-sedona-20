@@ -3,11 +3,12 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="header page-header">
       <a href="#" class="header-logo page-header__logo">
-        <img src="https://via.placeholder.com/150x150" width="102" height="85" alt="Логотип сайта городка Седона">
+        <img class="header-logo__image" src="img/logo-sedona-mobile.svg" width="102" height="85" alt="Логотип сайта городка Седона">
       </a>
       <nav class="main-nav header_nav">
         <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
@@ -42,7 +43,7 @@
       <h1 class="visually-hidden">Седона небольшой городок в Аризоне</h1>
       <section class="intro">
         <div class="intro__header">
-          <img class="intro__text" src="https://via.placeholder.com/150x150" width="280" height="213" alt="Добро пожаловоть в Седону">
+          <img class="intro__text" src="img/text-sedona-index.svg" width="280" height="213" alt="Добро пожаловоть в Седону">
         </div>
         <div class="intro__wrapper">
           <h2 class="intro__title">Седона - небольшой городок в аризоне, заслуживающий большего!</h2>
@@ -61,7 +62,7 @@
               Седона не аттракцион для туристов, там течет своя жизнь
             </p>
             <a class="advantages__link" href="#">
-              <img class="advantages__img" src="https://via.placeholder.com/150x150" width="320" height="260" alt="Достопримечательность">
+              <img class="advantages__img" src="img/main-city-mobile@1x.jpg" width="320" height="260" alt="Достопримечательность">
             </a>
           </li>
           <li class="advantages__item">
@@ -73,10 +74,10 @@
               Да, по нему можно пройти! Если вы осмелитесь, конечно
             </p>
             <a class="advantages__link" href="#">
-              <img class="advantages__img" src="https://via.placeholder.com/150x150" width="320" height="260" alt="Достопримечательность">
+              <img class="advantages__img" src="img/photo-bridge-mobile@1x.jpg" width="320" height="260" alt="Достопримечательность">
             </a>
           </li>
-          <li class="advantages__item">
+          <li class="advantages__item advantages__item--background">
             <h3 class="advantages__title">Небольшая площадь</h3>
             <p class="advantages__order">
               — №3 —
@@ -85,7 +86,7 @@
               Все интересные места находятся очень близко
             </p>
           </li>
-          <li class="advantages__item">
+          <li class="advantages__item advantages__item--background">
             <h3 class="advantages__title">Красивая дорога</h3>
             <p class="advantages__order">
               — №4 —
@@ -94,7 +95,7 @@
               Ехать в седону из лас-вегаса совсем не скучно!
             </p>
           </li>
-          <li class="advantages__item">
+          <li class="advantages__item advantages__item--background">
             <h3 class="advantages__title">Мало туристов</h3>
             <p class="advantages__order">
               — №5 —
@@ -129,15 +130,15 @@
         </ul>
       </section>
       <section class="find-hotel">
-        <h2 class="visual-hidden">Поиск гостиницы</h2>
+        <h2 class="visually-hidden">Поиск гостиницы</h2>
         <span class="find-hotel__title">Заинтересовались?</span>
         <p class="find-hotel__desc">Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в седоне</p>
-        <a href="#" class="find-hotel__btn">Найти гостиницу</a>
+        <a href="#" class="find-hotel__btn btn">Найти гостиницу</a>
     </section>
     <section class="main-map">
-      <h2 class="visual-hidden">Карта Седоны</h2>
-      <a href="#">
-        <img src="https://via.placeholder.com/150x150" alt="Карта Седоны">
+      <h2 class="visually-hidden">Карта Седоны</h2>
+      <a class="main-map__link" href="#">
+        <img class="main-map__img" src="img/bg-map-mobile@1x.jpg" alt="Карта Седоны">
       </a>
     </section>
     </main>
@@ -145,7 +146,7 @@
       <p class="page-footer__tag">
         #visitSEDONA
       </p>
-      <ul class="social social__list">
+      <ul class="social page-footer__social-list">
         <li class="social__item">
           <a class="social__link social__link--twitter" href="https://twitter.com/htmlacademy_ru">Мы в Твитере</a>
         </li>
