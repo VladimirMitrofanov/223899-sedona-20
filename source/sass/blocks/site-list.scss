@@ -1,0 +1,18 @@
+.site-list__link {
+  display: block;
+  padding: 10px 0 10px;
+  width: 320px;
+  text-decoration: none;
+  text-align: center;
+  background-color: $bg-basic;
+  color: $basic-white;
+}
+
+.site-list__item:not(:last-child) {
+  border-bottom: 1px solid #678FA8;
+}
+
+.site-list__item:not(:first-child) {
+  border-top: 1px solid #9AC2DB;
+}
+
