@@ -1,9 +1,9 @@
 body {
-  min-width: 320px;
-  margin: 0 auto;
+  min-height: 100%;
+  margin: 0;
   padding: 0;
   background-color: white;
-  font-family: "PTSans", Arial, sans-serif;
+  font-family: "PTSans", "Arial", sans-serif;
   font-weight: normal;
   font-size: 14px;
   line-height: 21px;
@@ -20,6 +20,7 @@ img {
   height: auto;
 }
 
-.page  {
+.page {
+  height: 100%;
   box-sizing: border-box;
 }

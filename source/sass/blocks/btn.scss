@@ -8,6 +8,25 @@
   line-height: 26px;
   text-transform: uppercase;
   color: white;
-  background-color:skyblue;
+  background-color: skyblue;
   cursor: pointer;
+}
+
+.btn:focus,
+.btn:hover {
+  background-color: #669ec0;
+}
+
+.btn:active {
+  background-color: #5496bd;
+}
+
+.btn--disabled,
+.btn:disabled {
+  background-color: #e5e5e5;
+}
+
+.btn--disabled:focus,
+.btn--disabled:hover {
+  background-color: #e5e5e5;
 }
