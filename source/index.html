@@ -2,6 +2,7 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>HTML Academy: Седона</title>
     <link rel="stylesheet" href="css/style.css">
   </head>
@@ -10,7 +11,7 @@
       <a href="#" class="header-logo page-header__logo">
         <img class="header-logo__image" src="img/logo-sedona-mobile.svg" width="102" height="85" alt="Логотип сайта городка Седона">
       </a>
-      <nav class="main-nav header_nav">
+      <nav class="main-nav main-nav--close header_nav">
         <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
@@ -38,20 +39,19 @@
         </div>
       </nav>
     </header>
-
     <main class="page-main">
       <h1 class="visually-hidden">Седона небольшой городок в Аризоне</h1>
       <section class="intro">
         <div class="intro__header">
           <img class="intro__text" src="img/text-sedona-index.svg" width="280" height="213" alt="Добро пожаловоть в Седону">
         </div>
-        <div class="intro__wrapper">
-          <h2 class="intro__title">Седона - небольшой городок в аризоне, заслуживающий большего!</h2>
-          <p class="intro__desc">Рассмотрим 5 причин, по которым седона круче чем Гранд Каньон!</p>
-        </div>
       </section>
       <section class="advantages">
         <h2 class="visually-hidden">Наши преимущества</h2>
+        <div class="intro__wrapper">
+          <h2 class="advantages__main-title">Седона - небольшой городок в аризоне, заслуживающий большего!</h2>
+          <p class="advantages__desc">Рассмотрим 5 причин, по которым седона круче чем Гранд Каньон!</p>
+        </div>
         <ul class="advantages__list">
           <li class="advantages__item">
             <h3 class="advantages__title">Настоящий городок</h3>
@@ -64,6 +64,26 @@
             <a class="advantages__link" href="#">
               <img class="advantages__img" src="img/main-city-mobile@1x.jpg" width="320" height="260" alt="Достопримечательность">
             </a>
+            <ul class="advantages__inner-list">
+              <li class="advantages__inner-item">
+                <h3 class="advantages__inner-title">Жилье</h3>
+                <p class="advantages__inner-description">
+                  Рекомендуем пожить в настоящем мотеле, все как в кино!
+                </p>
+              </li>
+              <li class="advantages__inner-item">
+                <h3 class="advantages__inner-title">Сувениры</h3>
+                <p class="advantages__inner-description">
+                  не только китайского, но и местного производства!
+                </p>
+              </li>
+              <li class="advantages__inner-item">
+                <h3 class="advantages__inner-title">Еда</h3>
+                <p class="advantages__inner-description">
+                  всегда заказывайте фирменный бургер, вы не разочаруетесь!
+                </p>
+              </li>
+            </ul>
           </li>
           <li class="advantages__item">
             <h3 class="advantages__title">Там есть мост дьявола</h3>
@@ -102,29 +122,6 @@
             </p>
             <p class="advantages__description">
               Большинство едет в гранд каньони толпится там
-            </p>
-          </li>
-        </ul>
-      </section>
-      <section class="features">
-        <h2 class="visually-hidden">Дополнительно ко всему</h2>
-        <ul class="features__list">
-          <li class="features__item">
-            <h3 class="features__title">Жилье</h3>
-            <p class="features__description">
-              Рекомендуем пожить в настоящем мотеле, все как в кино!
-            </p>
-          </li>
-          <li class="features__item">
-            <h3 class="features__title">Сувениры</h3>
-            <p class="features__description">
-              не только китайского, но и местного производства!
-            </p>
-          </li>
-          <li class="features__item">
-            <h3 class="features__title">Еда</h3>
-            <p class="features__description">
-              всегда заказывайте фирменный бургер, вы не разочаруетесь!
             </p>
           </li>
         </ul>

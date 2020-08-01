@@ -5,13 +5,19 @@
   list-style: none;
 }
 
+.features__item  {
+  width: 240px;
+  margin: 0 auto;
+}
+
 .features__title {
+  padding-bottom: 28px;
   font-weight: bold;
   font-size: 18px;
   line-height: 26px;
 }
 
 .features__description {
+  padding-bottom: 38px;
   font-weight: normal;
 }
-
