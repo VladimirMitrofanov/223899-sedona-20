@@ -1,4 +1,5 @@
 .advantages__main-title {
+  margin-top: 40px;
   padding-bottom: 32px;
   font-size: 18px;
   line-height: 26px;
@@ -12,10 +13,37 @@
   text-align: center;
 }
 
+.advantages__intro {
+  position: relative;
+  &::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 60px;
+    top: -70px;
+    background-image: url(../../img/bg-intro-triangle-mobile.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  &::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 60px;
+    bottom: -30px;
+    background-image: url(../../img/);
+    background-repeat: no-repeat;
+    background-size: contain;
+    // transform: rotate(180deg);
+  }
+}
+
 .advantages__wrapper {
-  width: 285px;
-  margin: 0 auto;
-  margin-top: 32px;
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+  }
 }
 
 .advantages__list {
@@ -30,27 +58,33 @@
   font-weight: bold;
   font-size: 18px;
   line-height: 26px;
+  margin-bottom: 27px;
 }
 
 .advantages__description {
   font-weight: normal;
   font-size: 14px;
   line-height: 21px;
+  margin-top: 27px;
 }
 
 .advantages__item {
   text-align: center;
+  @media (min-width: $tablet-width) {
+
+  }
 }
 
-.advantages__item:nth-child(1) {
-  background-color: $bg-basic;
-}
-
-.advantages__item:nth-child(2) {
+.advantages__info {
+  padding: 35px 16px;
   background-color: $bg-basic;
 }
 
 .advantages__item--background {
+  padding-top: 25px;
+  padding-bottom: 25px;
+  padding-left: 40px;
+  padding-right: 40px;
   background-color: #eeeeee;
   color: #000000;
 }
@@ -59,14 +93,33 @@
   position: relative;
   padding: 0;
   margin: 0;
+  margin-top: 35px;
+  padding-left: 69px;
+  font-size: 14px;
+  line-height: 21px;
+  text-align: left;
   color: #000000;
   background-color: $basic-white;
   list-style: none;
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+  }
 }
 
 .advantages__inner-item {
   width: 240px;
   margin: 0 auto;
+}
+
+.advantages__link {
+  display: block;
+  @media (min-width: $tablet-width) {
+    flex-grow: 1;
+    outline: 5px solid fade(red, 50%);
+
+  }
 }
 
 .advantages__inner-title {

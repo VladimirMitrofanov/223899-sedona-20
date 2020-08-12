@@ -1,7 +1,9 @@
 .header-logo__image {
   position: absolute;
+  z-index: 5;
   left: 50%;
   transform: translateX(-50%);
   display: block;
   margin: 0 auto;
+  bottom: -28px;
 }

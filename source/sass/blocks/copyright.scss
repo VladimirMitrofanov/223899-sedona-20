@@ -1,5 +1,21 @@
+.copyright {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 23px;
+}
+
 .copyright__text {
+  display: block;
   font-weight: normal;
   font-size: 14px;
   line-height: 26px;
+}
+
+.copyright__link {
+  display: block;
+  margin-left: 12px;
+  width: 27px;
+  height: 35px;
+  background-image: url(../img/logo-htmlacademy.svg);
+  background-repeat: no-repeat;
 }

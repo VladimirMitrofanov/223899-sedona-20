@@ -8,17 +8,19 @@
   line-height: 26px;
   text-transform: uppercase;
   color: white;
-  background-color: skyblue;
+  background-color: $bg-basic;
   cursor: pointer;
+  @media (min-width: $tablet-width) {
+    width: 458px;
+  }
 }
 
-.btn:focus,
 .btn:hover {
-  background-color: #669ec0;
+  background-color: $bg-hover;
 }
 
 .btn:active {
-  background-color: #5496bd;
+  background-color: $bg-active;
 }
 
 .btn--disabled,

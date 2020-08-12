@@ -3,13 +3,27 @@
 }
 
 .video__title {
+  display: block;
+  margin-bottom: 32px;
   font-weight: bold;
   font-size: 18px;
   line-height: 26px;
 }
 
 .video__desc {
+  margin-bottom: 32px;
   font-weight: normal;
   font-size: 14px;
   line-height: 24px;
+}
+
+.video__header {
+  margin-top: 32px;
+}
+
+.video__player {
+  width: 100%;
+  min-height: 201px;
+  background-image: url(../img/video-mobile@1x.jpg);
+  background-repeat: no-repeat;
 }
