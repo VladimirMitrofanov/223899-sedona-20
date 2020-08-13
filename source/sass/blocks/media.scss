@@ -1,7 +1,29 @@
+.media-intro__title {
+  margin-top: 40px;
+  padding-bottom: 32px;
+  font-size: 18px;
+  line-height: 26px;
+  text-align: center;
+}
+
+.media-intro__desc {
+  padding-bottom: 38px;
+  font-size: 14px;
+  font-weight: normal;
+  text-align: center;
+}
+
 .media {
   text-align: center;
 }
 
 .media__photo-list {
   list-style: none;
+}
+
+.media_photo-item {
+  border-bottom: 1px solid #E5E5E5;
+  padding-top: 20px;
+  padding-bottom: 112px;
+  border-top: 1px solid #E5E5E5;
 }

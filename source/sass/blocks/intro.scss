@@ -1,6 +1,7 @@
 .intro__header {
+  position: relative;
   min-height: 390px;
-  background-color: tomato;
+  background-color: #81b3d2;
   background-image: url("../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -10,4 +11,14 @@
   display: block;
   margin: 0 auto;
   padding: 75px 20px;
+}
+
+.intro__desc {
+  margin-top: 25px;
+}
+
+.intro__wrapper {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  text-align: center;
 }
