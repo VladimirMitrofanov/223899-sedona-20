@@ -76,4 +76,7 @@
   .main-nav--closed .site-list__item {
     display: none;
   }
+  .main-nav--nojs .site-list__item {
+    display: block;
+  }
 }

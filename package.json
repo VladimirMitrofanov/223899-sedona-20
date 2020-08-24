@@ -36,5 +36,18 @@
   ],
   "engines": {
     "node": "12.18.2"
-  }
+  },
+  "version": "1.0.0",
+  "main": "gulpfile.js",
+  "dependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/VladimirMitrofanov/223899-sedona-20.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/VladimirMitrofanov/223899-sedona-20/issues"
+  },
+  "homepage": "https://github.com/VladimirMitrofanov/223899-sedona-20#readme"
 }

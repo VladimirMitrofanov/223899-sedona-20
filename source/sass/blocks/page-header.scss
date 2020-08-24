@@ -1,4 +1,14 @@
 .page-header {
   position: relative;
-  padding-bottom: 56px
+  width: 320px;
+  margin: 0 auto;
+  padding-bottom: 56px;
+   @media (min-width: $tablet-width) {
+    width: 768px;
+    padding-bottom: 0;
+  }
+  @media (min-width: $desktop-width) {
+    min-width: 1200px;
+    padding-bottom: 0;
+  }
 }
