@@ -76,11 +76,13 @@
 }
 
 .advantages__info {
+  width: 33%;
   padding: 35px 16px;
   background-color: $bg-basic;
 }
 
 .advantages__item--background {
+  width: 33%;
   padding-top: 25px;
   padding-bottom: 25px;
   padding-left: 40px;
@@ -109,12 +111,13 @@
 }
 
 .advantages__inner-item {
-  width: 240px;
+  width: 33%;
   margin: 0 auto;
 }
 
 .advantages__link {
   display: block;
+  width: 67%;
   @media (min-width: $tablet-width) {
     flex-grow: 1;
     outline: 5px solid fade(red, 50%);

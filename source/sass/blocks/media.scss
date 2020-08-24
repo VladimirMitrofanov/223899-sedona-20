@@ -19,6 +19,10 @@
 
 .media__photo-list {
   list-style: none;
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 
 .media_photo-item {
@@ -26,4 +30,18 @@
   padding-top: 20px;
   padding-bottom: 112px;
   border-top: 1px solid #E5E5E5;
+  @media (min-width: $tablet-width) {
+    border: none;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+.media_photo-item:first-child {
+  @media (min-width: $tablet-width) {
+    min-width: 648px;
+  }
+  @media (min-width: $desktop-width) {
+    min-width: 1200px;
+  }
 }

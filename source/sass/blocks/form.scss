@@ -1,7 +1,9 @@
-.form {
+.form__wrapper {
   display: flex;
   flex-direction: column;
+  margin: 0 auto;
   @media (min-width: $tablet-width) {
+    flex-direction: row;
     flex-wrap: wrap;
   }
 }
@@ -14,6 +16,10 @@
   text-align: center;
 }
 
+.form__option {
+  display: flex;
+}
+
 .form__submit {
   width: 280px;
 }
@@ -23,14 +29,22 @@
   margin-top: 15px;
 }
 
-.form__fieldset  {
+.form__fieldset {
   border: none;
   border-bottom: 1px solid #E5E5E5;
   padding-top: 20px;
-  padding-bottom: 112px;
+  padding-bottom: 25px;
+  @media (min-width: $tablet-width) {
+    border: none;
+  }
 }
 
-.form__label-presents {
+.form__fieldset-presents {
+  display: flex;
+  width: 280px;
+}
+
+.form__option-presents {
   display: flex;
   align-items: baseline;
   &:not(first-child) {
@@ -38,25 +52,44 @@
   }
 }
 
-.form__label-contacts {
+.form__fieldset-contacts {
   display: flex;
+  width: 280px;
   flex-direction: column;
-  align-items: center;
   &:not(first-child) {
     margin-top: 20px;
   }
+  @media (min-width: $tablet-width) {
+    width: 638px;
+  }
 }
 
-.form__label-impression {
+.form__option-contacts {
   display: flex;
+  flex-direction: column;
+  align-items: center;
+  &:first-child {
+    margin-bottom: 14px;
+  }
+}
+
+.form__fieldset-impression {
+  width: 280px;
   margin-bottom: 37px;
-  width: 320px;
   font-weight: bold;
   font-size: 18px;
   line-height: 26px;
   text-transform: none;
   @media (min-width: $tablet-width) {
+    order: -2;
+  }
+}
 
+.form__option-impression {
+  display: flex;
+  margin-top: 40px;
+  &:not(last-child) {
+    margin-bottom: 51px;
   }
 }
 
@@ -101,13 +134,26 @@
   background-color: #F2F2F2;
 }
 
-.form__label-showplace {
+.form__fieldset-showplace {
   display: flex;
+  width: 280px;
   margin-bottom: 37px;
   font-weight: bold;
   font-size: 18px;
   line-height: 26px;
   text-transform: none;
+  @media (min-width: $tablet-width) {
+    width: 638px;
+  }
+}
+
+.form__option-showplace {
+  display: flex;
+  margin-top: 15px;
+  &:not(last-child) {
+    margin-bottom: 40px;
+  }
+
 }
 
 .form__checkbox {
@@ -128,10 +174,14 @@
   background-color: #F2F2F2;
 }
 
-.form__label-emotions {
+.form__fieldset-emotion {
+  width: 280px;
   font-weight: bold;
   font-size: 18px;
   line-height: 26px;
+  @media (min-width: $tablet-width) {
+    width: 638px;
+  }
 }
 
 .form__textarea {
