@@ -1,0 +1,42 @@
+.popup {
+  display: none;
+  width: 320px;
+  margin: 0 auto;
+  background-color: $basic-white;
+  box-shadow: 0 7px 15px rgba(0, 1, 1, 0.15);
+  text-align: center;
+
+  &--open {
+    display: block;
+  }
+}
+
+.popup__wrapper {
+  padding: 35px 55px;
+  box-sizing: border-box;
+}
+
+.popup__title {
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 26px;
+  margin-bottom: 20px;
+}
+
+.popup__desc {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  color: #333333;
+  margin-bottom: 0px;
+}
+
+@media (min-width: $tablet-width) {
+  .popup {
+    width: 640px;
+  }
+
+  .popup__wrapper {
+    padding: 40px 60px;
+  }
+}

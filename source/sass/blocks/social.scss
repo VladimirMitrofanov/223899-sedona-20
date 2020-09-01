@@ -18,6 +18,8 @@
   }
   &:active {
     background-color: $bg-active;
+    background-color: transparent;
+    opacity: .3;
   }
 }
 

@@ -1,0 +1,10 @@
+.feedback {
+  @media (min-width: $tablet-width) {
+    width: 652px;
+    margin: 0 auto;
+  }
+  @media (min-width: $desktop-width) {
+    width: 960px;
+    margin: 0 auto;
+  }
+}

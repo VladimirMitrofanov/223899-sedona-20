@@ -19,6 +19,41 @@
   }
 }
 
+.site-list__link:hover {
+  background-color: $bg-hover;
+  @media (min-width: $tablet-width) {
+    color: $bg-basic;
+    background: none;
+  }
+}
+
+.site-list__link:active {
+  background-color: $bg-active;
+  @media (min-width: $tablet-width) {
+    color: #000000;
+    opacity: 0.3;
+    background: none;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .site-list__link--current {
+    color: $light-brown;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .site-list__link--current:hover {
+    color: $brown;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .site-list__link--current:active {
+    opacity: 0.3;
+  }
+}
+
 .site-list__item:not(:last-child) {
   border-bottom: 1px solid #678fa8;
   @media (min-width: $tablet-width) {

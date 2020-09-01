@@ -1,0 +1,34 @@
+.popup-sent {
+  position: fixed;
+  left: 50%;
+  bottom: 50vh;
+  transform: translateX(-50%);
+}
+
+.popup-sent__wrapper-btn {
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+.popup-sent__btn {
+  font-size: 18px;
+  width: 100%;
+}
+
+@media (min-width: $tablet-width) {
+  .popup-sent {
+    width: 640px;
+  }
+
+  .popup-sent .popup__wrapper {
+    padding-left: 110px;
+    padding-right: 110px;
+  }
+
+  .popup-sent__wrapper-btn {
+    padding-left: 95px;
+    padding-right: 95px;
+    padding-top: 45px;
+    padding-bottom: 45px;
+  }
+}

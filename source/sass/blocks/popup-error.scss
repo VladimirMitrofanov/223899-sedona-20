@@ -1,0 +1,24 @@
+.popup-error {
+  position: fixed;
+  left: 50%;
+  bottom: 50vh;
+  transform: translateX(-50%);
+}
+
+.popup-error__btn {
+  width: 180px;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
+@media (min-width: $tablet-width) {
+
+  .popup-error {
+    width: 400px;
+    box-sizing: border-box;
+  }
+
+  .popup-error__btn {
+    width: 100%;
+  }
+}
