@@ -26,7 +26,7 @@
               </a>
             </li>
             <li class="site-list__item">
-              <a class="site-list__link" href="#">
+              <a class="site-list__link site-list__link--current" href="#">
                 форма отзыва
               </a>
             </li>
@@ -87,22 +87,26 @@
 
               <fieldset class="form__fieldset-contacts form__fieldset">
                 <legend class="form__legend">Контактная информация:</legend>
+                  <div class="form__fieldset-contacts-wrapper">
+                    <label class="form__label">
+                      <p class="form__option-contacts">
+                        <span class="form__title">Контактный телефон*:</span><br>
+                        <input class="form__input-tel" type="tel" name="phone" placeholder="Введите телефон">
+                        <div class="form__input-tel--icon"></div>
+                      </p>
+                    </label>
 
-                  <label class="form__label">
-                    <p class="form__option-contacts">
-                      <span class="form__title">Контактный телефон*:</span><br>
-                      <input class="form__input-tel" type="tel" name="phone" placeholder="Введите телефон">
-                    </p>
-                  </label>
 
-                <p class="form__option">
-                  <label class="form__label">
-                    <p class="form__option-contacts">
-                      <span class="form__title">Электронная почта*:</span><br>
-                      <input class="form__input-email" type="email" name="e-mail" placeholder="Введите e-mail">
-                    </p>
-                  </label>
-                </p>
+                    <label class="form__label">
+                      <p class="form__option-contacts">
+                        <span class="form__title">Электронная почта*:</span><br>
+                        <input class="form__input-email" type="email" name="e-mail" placeholder="Введите e-mail">
+                        <div class="form__input-email--icon"></div>
+                      </p>
+                    </label>
+                  </div>
+
+
               </fieldset>
 
 
@@ -140,41 +144,43 @@
 
               <fieldset class="form__fieldset-showplace form__fieldset">
                 <legend class="form__legend">Посещенные <br>достопримечательности:</legend>
-
-                  <label class="form__label">
-                    <p class="form__option-showplace">
-                      <input class="form__input-checkbox visually-hidden" type="checkbox" name="Devils_Bridge" value="DevilsBridge" checked>
-                      <span class="form__checkbox form__checkbox-element"></span>
-                      <span class="form__title">Мост дьявола</span>
-                    </p>
-                  </label>
-
-
-                  <label class="form__label">
-                    <p class="form__option-showplace">
-                      <input class="form__input-checkbox visually-hidden" type="checkbox" name="Kolokol_" value="Kolokol" checked>
-                      <span class="form__checkbox form__checkbox-element"></span>
-                      <span class="form__title">Гора-Колокол</span>
-                    </p>
-                  </label>
+                  <div class="form__fieldset-showplace-wrapper">
+                    <label class="form__label">
+                      <p class="form__option-showplace">
+                        <input class="form__input-checkbox visually-hidden" type="checkbox" name="Devils_Bridge" value="DevilsBridge" checked>
+                        <span class="form__checkbox form__checkbox-element"></span>
+                        <span class="form__title">Мост дьявола</span>
+                      </p>
+                    </label>
 
 
-                  <label class="form__label">
-                    <p class="form__option-showplace">
-                      <input class="form__input-checkbox visually-hidden" type="checkbox" name="Slide_Park" value="SlidePark" checked>
-                      <span class="form__checkbox form__checkbox-element"></span>
-                      <span class="form__title">Слайд-парк</span>
-                    </p>
-                  </label>
+                    <label class="form__label">
+                      <p class="form__option-showplace">
+                        <input class="form__input-checkbox visually-hidden" type="checkbox" name="Kolokol_" value="Kolokol" checked>
+                        <span class="form__checkbox form__checkbox-element"></span>
+                        <span class="form__title">Гора-Колокол</span>
+                      </p>
+                    </label>
 
 
-                  <label class="form__label">
-                    <p class="form__option-showplace">
-                      <input class="form__input-checkbox visually-hidden" type="checkbox" name="Red_Rocks" value="RedRocks">
-                      <span class="form__checkbox form__checkbox-element"></span>
-                      <span class="form__title">Красные скалы</span>
-                    </p>
-                  </label>
+                    <label class="form__label">
+                      <p class="form__option-showplace">
+                        <input class="form__input-checkbox visually-hidden" type="checkbox" name="Slide_Park" value="SlidePark" checked>
+                        <span class="form__checkbox form__checkbox-element"></span>
+                        <span class="form__title">Слайд-парк</span>
+                      </p>
+                    </label>
+
+
+                    <label class="form__label">
+                      <p class="form__option-showplace">
+                        <input class="form__input-checkbox visually-hidden" type="checkbox" name="Red_Rocks" value="RedRocks">
+                        <span class="form__checkbox form__checkbox-element"></span>
+                        <span class="form__title">Красные скалы</span>
+                      </p>
+                    </label>
+                  </div>
+
 
               </fieldset>
 
@@ -210,9 +216,29 @@
       </ul>
       <div class="page-footer__copyright copyright">
         <b class="copyright__text">Разработано</b>
-        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive"></a>
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+          <svg class="copyright__link-logo"version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="26.943px" height="34.09px" viewBox="0 0 26.943 34.09" enable-background="new 0 0 26.943 34.09" xml:space="preserve">
+          <path d="M13.62,0.017L13.472,0L0,1.412v24.661l13.473,8.017l13.43-7.99l0.042-0.025V1.412L13.62,0.017z M25.019,12.127L13.495,5.334 L13.494,5.23l-0.087,0.05l-0.088-0.056v0.109L1.925,12.118V3.147l11.548-1.212l11.547,1.212V12.127z M13.405,6.787L24.923,13.5 l-4.479,2.64l-7.093-4.221l-0.014,1.415l5.904,3.513l-0.86,0.507l-5.03-2.992l-0.014,1.415l3.827,2.275l-0.782,0.523l-3.031-1.787 l-0.014,1.413l1.853,1.091l-1.8,1.081L2.034,13.622L13.405,6.787z M1.925,15.127l11.411,6.791l0.016,1.044L5.41,18.234L5.395,19.65 l7.979,4.795l0.018,1.076l-7.973-4.74l-0.013,1.414l8.021,4.822l0.046,0.025l8.143-4.872l-0.011-5.177l3.415-2.036v10.021 L13.472,31.85L1.925,24.979V15.127z"/>
+        </svg>
+      </a>
       </div>
     </footer>
+    <section class="popup popup-error popup--ope">
+      <div class="popup__wrapper">
+        <h2 class="popup__title">Что-то пошло не так!</h2>
+        <p class="popup__desc">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+        <button class="popup-error__btn btn popup-close">Ок</button>
+      </div>
+    </section>
+    <section class="popup popup-sent popup--ope">
+      <div class="popup__wrapper">
+        <h2 class="popup__title">Ваш отзыв отправлен!</h2>
+        <p class="popup__desc">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте.</p>
+      </div>
+      <div class="popup-sent__wrapper-btn">
+        <button class="popup-sent__btn btn popup-close">Закрыть окно</button>
+      </div>
+    </section>
     <script src="js/main.js"></script>
   </body>
 </html>

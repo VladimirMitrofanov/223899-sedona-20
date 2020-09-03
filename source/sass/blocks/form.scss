@@ -1,11 +1,25 @@
+.form {
+  margin: 0 auto;
+  @media (min-width: $desktop-width) {
+    width: 960px;
+  }
+}
+
 .form__wrapper {
   display: flex;
   flex-direction: column;
-  margin: 0 auto;
   @media (min-width: $tablet-width) {
     flex-direction: row;
     flex-wrap: wrap;
   }
+  @media (min-width: $desktop-width) {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+
+.form__label {
+  position: relative;
 }
 
 .form__legend {
@@ -13,6 +27,7 @@
   font-weight: bold;
   font-size: 18px;
   line-height: 26px;
+  text-transform: uppercase;
   text-align: center;
 }
 
@@ -30,10 +45,12 @@
 }
 
 .form__fieldset {
+  position: relative;
   border: none;
   border-bottom: 1px solid #E5E5E5;
   padding-top: 20px;
   padding-bottom: 25px;
+  width: 100%;
   @media (min-width: $tablet-width) {
     border: none;
   }
@@ -41,6 +58,7 @@
 
 .form__fieldset-presents {
   display: flex;
+  margin-left: 86px;
   width: 280px;
 }
 
@@ -62,9 +80,13 @@
   @media (min-width: $tablet-width) {
     width: 638px;
   }
+  @media (min-width: $desktop-width) {
+    width: 100%;
+  }
 }
 
 .form__option-contacts {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -97,7 +119,6 @@
 .form__input-email,
 .form__input-text {
   width: 100%;
-  min-width: 194px;
   height: 58px;
   padding-left: 22px;
   margin-left: 20px;
@@ -108,12 +129,49 @@
   border: none;
 }
 
+.form__input-tel--icon::after {
+  content: '';
+  position: absolute;
+  width: 58px;
+  height: 58px;
+  top: 42px;
+  right: -9px;
+  background-color: #e5e5e5;
+  background-image: url(../../img/icon-phone.svg);
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.form__input-email--icon::after {
+  content: '';
+  position: absolute;
+  width: 58px;
+  height: 58px;
+  top: 42px;
+  right: -10px;
+  background-color: #e5e5e5;
+  background-image: url(../../img/icon-mail.svg);
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
 .form__title {
   display: block;
 }
 
 .form__input-radio {
+  position: relative;
   margin-bottom: 21px;
+  &:checked + .form__radio::after {
+    content: '';
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    right: 31px;
+    top: 5px;
+    background-color: #000000;
+  }
 }
 
 .form__radio {
@@ -134,6 +192,21 @@
   background-color: #F2F2F2;
 }
 
+.form__input-checkbox {
+  position: relative;
+  &:checked + .form__checkbox::after {
+    content: '';
+    position: absolute;
+    width: 22px;
+    height: 22px;
+    right: 31px;
+    top: 5px;
+    background-image: url(../../img/icon-tick.svg);
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+}
+
 .form__fieldset-showplace {
   display: flex;
   width: 280px;
@@ -145,6 +218,9 @@
   @media (min-width: $tablet-width) {
     width: 638px;
   }
+  @media (min-width: $desktop-width) {
+    width: 100%;
+  }
 }
 
 .form__option-showplace {
@@ -154,6 +230,35 @@
     margin-bottom: 40px;
   }
 
+}
+
+.form__fieldset-contacts-wrapper {
+  position: relative;
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0 auto;
+    width: 100%;;
+  }
+  @media (min-width: $desktop-width) {
+    flex-direction: row;
+    width: 100%;
+  }
+}
+
+.form__fieldset-showplace-wrapper {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 auto;
+    width: 480px;
+  }
+  @media (min-width: $desktop-width) {
+    flex-wrap: nowrap;
+    width: 100%;
+  }
 }
 
 .form__checkbox {
@@ -182,6 +287,9 @@
   @media (min-width: $tablet-width) {
     width: 638px;
   }
+  @media (min-width: $desktop-width) {
+    width: 100%;
+  }
 }
 
 .form__textarea {
@@ -195,4 +303,18 @@
   padding-left: 12px;
   padding-right: 7px;
   resize: none;
+}
+
+.form__textarea:focus,
+.form__input-tel:focus,
+.form__input-text:focus,.form__input-email:focus {
+  background-color: $basic-white;
+  outline: 0;
+  box-shadow: inset 0 0 0 4px #e5e5e5;
+}
+
+.form__textarea:hover,
+.form__input-tel:hover,
+.form__input-text:hover,.form__input-email:hover {
+  background-color:#E5E5E5;
 }
