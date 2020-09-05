@@ -1,9 +1,22 @@
+.media-intro {
+  @media (min-width: $tablet-width) {
+    width: 427px;
+    margin: 0 auto;
+    margin-bottom: 59px;
+  }
+}
+
 .media-intro__title {
-  margin-top: 40px;
+  margin-top: 31px;
   padding-bottom: 32px;
   font-size: 18px;
   line-height: 26px;
   text-align: center;
+  @media (min-width: $tablet-width) {
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 26px;
+  }
 }
 
 .media-intro__desc {
@@ -11,13 +24,19 @@
   font-size: 14px;
   font-weight: normal;
   text-align: center;
+  @media (min-width: $tablet-width) {
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+  }
 }
 
 .media {
-  text-align: center;
+
 }
 
 .media__photo-list {
+  margin-left: 20px;
   list-style: none;
   @media (min-width: $tablet-width) {
     display: flex;
@@ -28,7 +47,7 @@
 .media_photo-item {
   border-bottom: 1px solid #E5E5E5;
   padding-top: 20px;
-  padding-bottom: 112px;
+  padding-bottom: 18px;
   border-top: 1px solid #E5E5E5;
   @media (min-width: $tablet-width) {
     border: none;
@@ -43,5 +62,55 @@
   }
   @media (min-width: $desktop-width) {
     min-width: 1200px;
+  }
+}
+
+.media__photo-block-right {
+  margin-top: 20px;
+}
+
+@media (min-width: $tablet-width) {
+  .media__photo-block {
+    display: flex;
+    justify-content: space-between;
+    background-color: #F5f5f5;
+  }
+  .media__photo-block-left {
+    padding-left: 20px;
+  }
+  .media__photo-block-right {
+    padding-right: 20px;
+    margin-top: 0;
+    align-self: center;
+  }
+}
+
+.media_photo-item-author {
+  text-transform: none;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.media_photo-item-title {
+  padding-top: 6px;
+}
+
+.media_photo-item-raiting {
+  position: relative;
+  padding-left: 36px;
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-style: normal;
+  &::before {
+    content: "";
+    position: absolute;
+    opacity: .3;
+    width: 24px;
+    height: 22px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url(../img/icon-like.svg);
+    top: -5px;
+    left: 0;
   }
 }
