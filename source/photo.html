@@ -9,7 +9,11 @@
   <body>
     <header class="header page-header">
       <a href="#" class="header-logo page-header__logo">
-        <img class="header-logo__image" src="img/logo-sedona-mobile.svg" width="102" height="85" alt="Логотип сайта городка Седона">
+        <picture>
+          <source media="(min-width: 1200px)" srcset="img/logo-sedona-desktop.svg">
+          <source media="(min-width: 768px)" srcset="img/logo-sedona-tablet.svg">
+          <img class="header-logo__image" src="img/logo-sedona-mobile.svg" width="102" alt="Логотип сайта городка Седона">
+        </picture>
       </a>
       <nav class="main-nav main-nav--closed header_nav">
         <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
@@ -42,7 +46,7 @@
     <main class="page-main">
       <h1 class="visually-hidden">Седона небольшой городок в Аризоне</h1>
       <section class="intro">
-        <div class="intro__header">
+        <div class="intro__header intro__header--inner">
           <img class="intro__text" src="img/text-sedona.svg" width="280" height="213" alt="Добро пожаловоть в Седону">
         </div>
       </section>
@@ -54,35 +58,75 @@
         <ul class="media__photo-list">
           <li class="media_photo-item">
             <a class="media_photo-link" href="#">
-              <img class="media_photo-img" src="img/photo-sunset-mobile@1x.jpg" width="280" height="280" alt="Неродные просторы">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/photo-sunset-desktop@1x.jpg 1x, img/photo-sunset-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/photo-sunset-tablet@1x.jpg 1x, img/photo-sunset-tablet@2x.jpg 2x">
+                <img class="media__photo-img" src="img/photo-sunset-mobile@1x.jpg" srcset="img/photo-sunset-mobile@2x.jpg 2x" alt="Неродные просторы">
+              </picture>
             </a>
-            <h3 class="media_photo-item-title">Неродные просторы</h3>
-            <span class="media_photo-item-author">Автор фото: Борис</span>
-            <span class="media_photo-item-raiting">1350</span>
+            <div class="media__photo-block">
+              <div class="media__photo-block-left">
+                <h3 class="media_photo-item-title">Неродные просторы</h3>
+                <span class="media_photo-item-author">Автор фото: Борис</span>
+              </div>
+              <div class="media__photo-block-right">
+                <span class="media_photo-item-raiting">1350</span>
+              </div>
+            </div>
           </li>
           <li class="media_photo-item">
             <a class="media_photo-link" href="#">
-              <img class="media_photo-img" src="img/photo-cactus-mobile@1x.jpg" width="280" height="280" alt="Местная растительность">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/photo-cactus-desktop@1x.jpg 1x, img/photo-cactus-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/photo-cactus-tablet@1x.jpg 1x, img/photo-cactus-tablet@2x.jpg 2x">
+                <img class="media__photo-img" src="img/photo-cactus-mobile@1x.jpg" srcset="img/photo-cactus-mobile@2x.jpg 2x" alt="Местная растительность">
+              </picture>
             </a>
-            <h3 class="media_photo-item-title">Местная растительность</h3>
-            <span class="media_photo-item-author">Автор фото: Сергей</span>
-            <span class="media_photo-item-raiting">143</span>
+            <div class="media__photo-block">
+              <div class="media__photo-block-left">
+                <h3 class="media_photo-item-title">Местная растительность</h3>
+                <span class="media_photo-item-author">Автор фото: Сергей</span>
+              </div>
+              <div class="media__photo-block-right">
+                <span class="media_photo-item-raiting">143</span>
+              </div>
+            </div>
           </li>
           <li class="media_photo-item">
             <a class="media_photo-link" href="#">
-              <img class="media_photo-img" src="img/photo-roads-mobile@1x.jpg"280" height="280" alt="Дорога на север">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/photo-roads-desktop@1x.jpg 1x, img/photo-roads-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/photo-roads-tablet@1x.jpg 1x, img/photo-roads-tablet@2x.jpg 2x">
+                <img class="media__photo-img" src="img/photo-roads-mobile@1x.jpg" srcset="img/photo-roads-mobile@2x.jpg 2x" alt="Дорога на север">
+              </picture>
             </a>
-            <h3 class="media_photo-item-title">Дорога на север</h3>
-            <span class="media_photo-item-author">Автор фото: Петр</span>
-            <span class="media_photo-item-raiting">96</span>
+            <div class="media__photo-block">
+              <div class="media__photo-block-left">
+                <h3 class="media_photo-item-title">Дорога на север</h3>
+                <span class="media_photo-item-author">Автор фото: Петр</span>
+              </div>
+              <div class="media__photo-block-right">
+                <span class="media_photo-item-raiting">96</span>
+              </div>
+            </div>
           </li>
           <li class="media_photo-item">
             <a class="media_photo-link" href="#">
-              <img class="media_photo-img" src="img/photo-bridge-mobile@1x.jpg" width="280" height="280" alt="Мост дьявола">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/photo-bridge-desktop@1x.jpg 1x, img/photo-bridge-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/photo-bridge-tablet@1x.jpg 1x, img/photo-bridge-tablet@2x.jpg 2x">
+                <img class="media__photo-img" src="img/photo-bridge-mobile@1x.jpg" srcset="img/photo-bridge-mobile@2x.jpg 2x" alt="Мост дьявола">
+              </picture>
             </a>
-            <h3 class="media_photo-item-title">Мост дьявола</h3>
-            <span class="media_photo-item-author">Автор фото: Антон</span>
-            <span class="media_photo-item-raiting">254</span>
+            <div class="media__photo-block">
+              <div class="media__photo-block-left">
+                <h3 class="media_photo-item-title">Мост дьявола</h3>
+                <span class="media_photo-item-author">Автор фото: Антон</span>
+              </div>
+              <div class="media__photo-block-right">
+                <span class="media_photo-item-raiting">254</span>
+              </div>
+            </div>
           </li>
         </ul>
       </section>
@@ -95,6 +139,11 @@
           </div>
         </div>
         <div class="video__player">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/video-desktop@1x.jpg 1x, img/video-desktop@2x.jpg 2x">
+            <source media="(min-width: 768px)" srcset="img/video-tablet@1x.jpg 1x, img/video-tablet@2x.jpg 2x">
+            <img class="video__player-img" src="img/video-mobile@1x.jpg" srcset="img/video-mobile@2x.jpg 2x" alt="Видеопрезентация">
+          </picture>
           <div class="video__control">
             <div class="video__reply">
             </div>
