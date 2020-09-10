@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>HTML Academy: Седона</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body>
     <header class="header page-header">
@@ -15,7 +15,7 @@
           <img class="header-logo__image" src="img/logo-sedona-mobile.svg" width="102" alt="Логотип сайта городка Седона">
         </picture>
       </a>
-      <nav class="main-nav main-nav--closed header_nav">
+      <nav class="main-nav main-nav--closed main-nav--nojs header_nav">
         <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
@@ -66,7 +66,7 @@
                   <label class="form__label">
                     <p class="form__option-presents">
                       <span class="form__title">Имя*:</span>
-                      <input class="form__input-text" type="text" name="first-name" placeholder="Петр">
+                      <input class="form__input-text" type="text" name="first-name" placeholder="Петр" required>
                     </p>
                   </label>
 
@@ -74,7 +74,7 @@
                   <label class="form__label">
                     <p class="form__option-presents">
                       <span class="form__title">Фамилия*:</span>
-                      <input class="form__input-text" type="text" name="last-name" placeholder="Иванов">
+                      <input class="form__input-text" type="text" name="last-name" placeholder="Иванов" required>
                     </p>
                   </label>
                 </p>
@@ -90,7 +90,7 @@
 
 
               <fieldset class="form__fieldset-contacts form__fieldset">
-                <legend class="form__legend">Контактная информация:</legend>
+                <legend class="form__legend form__legend--lines">Контактная информация:</legend>
                   <div class="form__fieldset-contacts-wrapper">
                     <label class="form__label">
                       <p class="form__option-contacts">
@@ -147,7 +147,7 @@
 
 
               <fieldset class="form__fieldset-showplace form__fieldset">
-                <legend class="form__legend">Посещенные <br>достопримечательности:</legend>
+                <legend class="form__legend form__legend--lines">Посещенные <br>достопримечательности:</legend>
                   <div class="form__fieldset-showplace-wrapper">
                     <label class="form__label">
                       <p class="form__option-showplace">
@@ -192,7 +192,7 @@
               <fieldset class="form__fieldset-emotion form__fieldset">
                 <p class="form_option">
                   <label class="form__label">
-                    <span class="form__title">Опишите свои эмоции:</span><br>
+                    <span class="form__title form__title--lines">Опишите свои эмоции:</span><br>
                     <textarea name="emotions" class="form__textarea" placeholder="Опишите подробно все свои восторги"></textarea>
                   </label>
                 </p>
@@ -200,6 +200,7 @@
 
           </div>
           <button class="form__submit btn" type="submit">Отправить отзыв</button>
+          <span class="form__required">* — обязательные поля</span>
         </form>
       </section>
     </main>

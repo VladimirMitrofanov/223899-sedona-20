@@ -166,6 +166,117 @@
   }
 }
 
+.advantages__inner-item--house::before {
+  content: '';
+  position: absolute;
+  width: 37px;
+  height: 36px;
+  left: 22px;
+  top: -9px;
+  background-image: url(../img/icon-house.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  @media (min-width:$tablet-width) {
+    content: '';
+    position: absolute;
+    width: 77px;
+    height: 68px;
+    left: 143px;
+    top: -90px;
+    background-image: url(../img/icon-house.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+  }
+  @media (min-width:$desktop-width) {
+    content: '';
+    position: absolute;
+    width: 77px;
+    height: 68px;
+    left: 218px;
+    top: -90px;
+    background-image: url(../img/icon-house.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+  }
+}
+
+.advantages__inner-item--gift::before {
+  content: '';
+  position: absolute;
+  width: 37px;
+  height: 36px;
+  left: 22px;
+  top: 122px;
+  background-image: url(../img/icon-gift.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  @media (min-width:$tablet-width) {
+    content: '';
+    position: absolute;
+    width: 77px;
+    height: 68px;
+    left: 382px;
+    top: -90px;
+    background-image: url(../img/icon-gift.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+  }
+  @media (min-width:$desktop-width) {
+    content: '';
+    position: absolute;
+    width: 77px;
+    height: 68px;
+    left: 595px;
+    top: -90px;
+    background-image: url(../img/icon-gift.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+  }
+}
+
+.advantages__inner-item--burger::before {
+  content: '';
+  position: absolute;
+  width: 37px;
+  height: 36px;
+  left: 22px;
+  top: 235px;
+  background-image: url(../img/icon-burger.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  @media (min-width:$tablet-width) {
+    content: '';
+    position: absolute;
+    width: 77px;
+    height: 68px;
+    left: 610px;
+    top: -90px;
+    background-image: url(../img/icon-burger.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+  }
+  @media (min-width:$desktop-width) {
+    content: '';
+    position: absolute;
+    width: 77px;
+    height: 68px;
+    left: 970px;
+    top: -90px;
+    background-image: url(../img/icon-burger.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+  }
+}
+
 .advantages__inner-item {
   width: 100%;
   margin: 0 auto;
