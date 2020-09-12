@@ -5,5 +5,9 @@
   transform: translateX(-50%);
   display: block;
   margin: 0 auto;
-  bottom: -28px;
+  top: 0;
+  @media (min-width: $desktop-width) {
+    width: 187px;
+    height: 96px;
+  }
 }
