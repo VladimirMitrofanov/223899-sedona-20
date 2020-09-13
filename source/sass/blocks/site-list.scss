@@ -1,4 +1,4 @@
-.site-list  {
+.site-list {
   @media (min-width: $desktop-width) {
     min-width: 1200px;
     padding-bottom: 0;
@@ -12,6 +12,7 @@
   text-align: center;
   background-color: $bg-basic;
   color: $basic-white;
+
   @media (min-width: $tablet-width) {
     border: none;
     background: none;
@@ -21,6 +22,7 @@
 
 .site-list__link:hover {
   background-color: $bg-hover;
+
   @media (min-width: $tablet-width) {
     color: $bg-basic;
     background: none;
@@ -29,6 +31,7 @@
 
 .site-list__link:active {
   background-color: $bg-active;
+
   @media (min-width: $tablet-width) {
     color: #000000;
     opacity: 0.3;
@@ -56,6 +59,7 @@
 
 .site-list__item:not(:last-child) {
   border-bottom: 1px solid #678fa8;
+
   @media (min-width: $tablet-width) {
     border: none;
   }
@@ -63,6 +67,7 @@
 
 .site-list__item:not(:first-child) {
   border-top: 1px solid #9ac2db;
+
   @media (min-width: $tablet-width) {
     border: none;
   }
@@ -73,4 +78,3 @@
     padding-left: 178px;
   }
 }
-
