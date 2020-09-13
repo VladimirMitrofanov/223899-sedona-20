@@ -6,9 +6,9 @@
   display: block;
   margin: 0 auto;
   top: 0;
+
   @media (min-width: $desktop-width) {
     width: 187px;
     height: 96px;
-    top: 0;
   }
 }

@@ -20,8 +20,9 @@
 
 .copyright__link-logo {
   &:hover {
-   fill: $bg-basic;
+    fill: $bg-basic;
   }
+
   &:active {
     fill: #000000;
     opacity: 0.3;
