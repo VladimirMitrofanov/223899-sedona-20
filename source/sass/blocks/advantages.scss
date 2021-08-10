@@ -91,6 +91,7 @@
     display: flex;
     justify-content: space-between;
     text-align: center;
+    height: 98px;
   }
 }
 
@@ -300,7 +301,7 @@
 }
 
 .advantages__link {
-  display: block;
+  display: inline-block;
   width: 100%;
 
   @media (min-width: $tablet-width) {
